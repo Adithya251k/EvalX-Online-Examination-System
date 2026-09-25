@@ -1,240 +1,191 @@
-# 🗳️ Online Voting System | ASP.NET Core MVC
+# 📝 EvalX | Online Examination System
 
-![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-8.0-blue)
-![C#](https://img.shields.io/badge/C%23-Language-purple)
-![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-Frontend-blueviolet)
-![Status](https://img.shields.io/badge/Status-Completed-success)
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black)
+![SQLite](https://img.shields.io/badge/SQLite-Database-blue)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-Frontend-purple)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-A secure, role-based **Online Voting System** built using **ASP.NET Core MVC**, **C#**, **MySQL**, **HTML**, **CSS**, **JavaScript**, and **Bootstrap**.
+A secure, role-based **Online Examination System** built using **Python Flask**, **SQLite**, **HTML**, **CSS**, **JavaScript**, and **Bootstrap**.
 
-The application enables administrators to manage elections, candidates, and voters while allowing users to securely cast their votes through an intuitive web interface. The system ensures that each voter can vote only once while providing administrators with complete control over the election process.
-
----
-
-# 🎯 Project Highlights
-
-- 🔐 Secure Authentication
-- 👥 Role-Based Access Control
-- 🗳️ Election Management
-- 👤 Candidate Registration & Approval
-- 🧑‍💼 Voter Management
-- 📊 Election Results
-- 💻 Responsive User Interface
+EvalX enables educational institutions to conduct online examinations efficiently with separate dashboards for administrators, staff, and students.
 
 ---
 
-# ✨ Features
+# 🚀 Project Highlights
+
+- 🔐 Secure Role-Based Authentication
+- 👨‍💼 Admin Management Panel
+- 👨‍🏫 Staff Dashboard
+- 👨‍🎓 Student Portal
+- 📝 Online Examination System
+- ⏱️ Timed Exams
+- 📊 Automatic Result Generation
+- 💾 SQLite Database
+- 📱 Responsive User Interface
+
+---
+
+# 🛠 Tech Stack
+
+## Backend
+- Python
+- Flask
+
+## Frontend
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript
+
+## Database
+- SQLite
+
+---
+
+# 👥 User Roles
 
 ## 👨‍💼 Administrator
 
-- Secure Login
-- Dashboard
-- Manage Elections
-- Add, Edit and Delete Candidates
-- Approve Candidate Registration Requests
-- Manage Voters
-- Monitor Election Status
-- View Election Results
-- Manage User Accounts
+- Manage Staff Accounts
+- Manage Students
+- Manage Examinations
+- View System Statistics
+- Monitor Overall Activity
 
 ---
 
-## 🧑 Candidate
+## 👨‍🏫 Staff
+
+- Login Securely
+- Create Exams
+- Add Questions
+- Edit Questions
+- View Student Attempts
+- Publish Results
+
+---
+
+## 👨‍🎓 Student
 
 - Register/Login
-- Submit Candidate Request
-- View Request Status
-- Participate in Elections
-- View Election Results
-
----
-
-## 🗳️ Voter
-
-- Secure Login
-- View Available Elections
-- Cast Vote
-- One Vote Per Election
-- View Election Results
-
----
-
-# 🛠️ Tech Stack
-
-| Technology | Purpose |
-|------------|---------|
-| ASP.NET Core MVC | Backend Framework |
-| C# | Business Logic |
-| MySQL | Database |
-| HTML5 | Structure |
-| CSS3 | Styling |
-| Bootstrap | Responsive UI |
-| JavaScript | Client-side Functionality |
+- View Available Exams
+- Attempt Online Exams
+- View Results
+- Track Exam History
 
 ---
 
 # 📂 Project Structure
 
 ```
-Online-Voting-System
+EvalX
 │
-├── Database
-│   └── VotingSystem.sql
+├── EvalX/
+│   ├── static/
+│   ├── templates/
+│   ├── views.py
+│   ├── db.py
+│   └── __init__.py
 │
-├── VotingSystem
-│   ├── Pages
-│   ├── wwwroot
-│   ├── Properties
-│   ├── appsettings.json
-│   ├── Program.cs
-│   └── VotingSystem.csproj
-│
-├── .gitignore
-└── VotingSystem.sln
+├── requirements.txt
+├── runserver.py
+└── README.md
 ```
 
 ---
 
 # ⚙️ Installation
 
-### 1. Clone the Repository
+## Clone Repository
 
 ```bash
-git clone https://github.com/Pruthvi-raj-shetty/Online-Voting-System.git
+git clone https://github.com/Pruthvi-raj-shetty/EvalX.git
 ```
 
-### 2. Open the Project
+## Navigate
 
-Open the solution file in **Visual Studio 2022**.
-
-```
-VotingSystem.sln
+```bash
+cd EvalX
 ```
 
-### 3. Restore NuGet Packages
+## Install Dependencies
 
-Visual Studio will automatically restore the required packages.
-
-### 4. Configure Database
-
-Import the SQL file located inside:
-
-```
-Database/VotingSystem.sql
+```bash
+pip install -r requirements.txt
 ```
 
-using **MySQL Workbench**.
+## Run
 
-### 5. Update Connection String
-
-Open:
-
+```bash
+python runserver.py
 ```
-appsettings.json
-```
-
-Update the MySQL connection string according to your local database configuration.
-
-### 6. Run the Application
-
-Press **F5** or click **Run** in Visual Studio.
 
 ---
 
-# 🗄️ Database
+# ✨ Features
 
-The complete database schema is available in:
-
-```
-Database/VotingSystem.sql
-```
-
-The database contains tables for:
-
-- Users
-- Elections
-- Candidates
-- Votes
-- Candidate Requests
-- Results
-
----
-
-# 👥 User Roles
-
-| Role | Permissions |
-|------|-------------|
-| Administrator | Manage Elections, Candidates, Voters and Results |
-| Candidate | Register and Participate in Elections |
-| Voter | Cast Vote and View Results |
-
----
-
-# 🔒 Security Features
-
-- Role-Based Authentication
-- One Vote Per Voter
+- User Registration
+- Secure Login
 - Session Management
-- Candidate Approval Workflow
-- Secure Database Operations
-- Server-side Validation
+- Exam Creation
+- Question Management
+- Timed Examinations
+- Automatic Result Calculation
+- Student Dashboard
+- Staff Dashboard
+- Responsive Interface
 
 ---
 
 # 📸 Screenshots
 
-Screenshots will be added soon.
-
-Planned screenshots include:
-
-- Login Page
-- Administrator Dashboard
-- Candidate Dashboard
-- Election Management
-- Candidate Management
-- Voting Page
-- Election Results
+> Screenshots of the application will be added soon.
 
 ---
 
-# 🚀 Future Enhancements
+# 🔮 Future Enhancements
 
-- Email Verification
-- OTP Authentication
-- Password Reset
-- Election Scheduling
-- Audit Logs
-- Export Results to PDF
-- Multi-language Support
-- Cloud Deployment (Azure / AWS)
-- Two-Factor Authentication
+- AI-powered Question Generation
+- Randomized Question Papers
+- Email Notifications
+- Performance Analytics Dashboard
+- PDF Result Generation
+- Cloud Database Support
+- AI-based Proctoring
+- Webcam Monitoring
+- Face Recognition
+- Mobile Application
 
 ---
 
-# 🤝 Contributing
+# 📚 Learning Outcomes
 
-Contributions are welcome.
+Through this project I learned:
 
-If you'd like to improve this project:
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to your branch
-5. Open a Pull Request
+- Flask Application Development
+- MVC Architecture
+- Authentication & Authorization
+- SQLite Database Integration
+- CRUD Operations
+- Bootstrap UI Development
+- Session Handling
+- Form Validation
+- Database Design
+- Full Stack Web Development
 
 ---
 
 # 👨‍💻 Author
 
-**Adithya kumar**
+**Pruthvi Raj**
+**adithya kumar**
 
 BCA Student | Full Stack Developer | Cloud & Cybersecurity Enthusiast
 
 GitHub:
-https://github.com/adithya251k
+https://github.com/Pruthvi-raj-shetty
 
 ---
 
-## ⭐ If you found this project useful, consider giving it a star!
+⭐ If you found this project useful, consider giving it a star!
